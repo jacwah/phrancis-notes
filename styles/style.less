@@ -8,32 +8,44 @@ atom-text-editor::shadow .text.phrancis_notes {
             //text-decoration: underline;
         }
 
-        &.todo {
-            color: #eded48;
-        }
+        &.keyword {
+            &.todo {
+                color: #eded48;
+            }
 
-        &.completed {
-            color: @text-color-success;
-        }
+            &.completed {
+                color: @text-color-success;
+            }
 
-        &.question {
-            color: @text-color-info;
-        }
+            &.question {
+                color: @text-color-info;
+            }
 
-        &.important {
-            color: #eea83d;
-        }
+            &.important {
+                color: #eea83d;
+            }
 
-        &.warning {
-            color: @text-color-error;
-        }
+            &.warning {
+                color: #cb2e2e;
+            }
 
-        &.note {
-            color: #f455f4;
-        }
+            &.note {
+                color: #f455f4;
+            }
 
-        &.future {
-            background-color: #5d00ba;
+            &.future {
+                background-color: #5d00ba;
+            }
         }
+    }
+
+    .markup.quote {
+        color: @text-color;
+        font-style: italic;
+    }
+
+    .markup.raw {
+        color: @text-color-subtle;
+        font-style: italic;
     }
 }
