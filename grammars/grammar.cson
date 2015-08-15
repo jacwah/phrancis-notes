@@ -19,11 +19,6 @@
         'name': 'markup.quote'
     }
     {
-        'begin': '\\$'
-        'end': '\\$'
-        'name': 'markup.raw'
-    }
-    {
         'begin': '<code>'
         'end': '</code>'
         'name': 'phrancis_notes.code'
