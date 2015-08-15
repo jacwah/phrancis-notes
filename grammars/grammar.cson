@@ -22,7 +22,7 @@
         'begin': '<code>'
         'end': '</code>'
         'name': 'phrancis_notes.code'
-        'patterns': ['include': '$self']
+        'patterns': ['include': '#slash-comment']
     }
 ]
 
