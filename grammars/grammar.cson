@@ -6,4 +6,37 @@
 ]
 
 'patterns': [
+    {
+        'begin': '~'
+        'end': '~'
+        'name': 'phrancis_notes.heading'
+    },
+    {
+        'match': '(@TODO)|(\\^temp)|(\\^staging)'
+        'name': 'phrancis_notes.todo'
+    },
+    {
+        'match': '(@COMPLETED)|(@RESOLVED)|(@DONE)'
+        'name': 'phrancis_notes.completed'
+    },
+    {
+         'match': '(@QUESTION)|(@UPDATE)|(@EXAMPLE)|(\\^dev)'
+         'name': 'phrancis_notes.question'
+    },
+    {
+        'match': '(@IMPORTANT)|(@EXCEPTION)|(\\^production)'
+        'name': 'phrancis_notes.important'
+    },
+    {
+        'match': '(@WARNING)|(@DANGER)|(@ERROR)|(\\^NoUndo)'
+        'name': 'phrancis_notes.warning'
+    },
+    {
+        'match': '(@NOTE)|(\\*\\w+)'
+        'name': 'phrancis_notes.note'
+    },
+    {
+        'match': '(@FUTURE)|(@TOLEARN)'
+        'name': 'phrancis_notes.future'
+    },
 ]

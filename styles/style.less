@@ -2,5 +2,38 @@
 
 atom-text-editor::shadow .text.phrancis_notes {
     .phrancis_notes {
+        &.heading {
+            color: @text-color-highlight;
+            font-weight: bold;
+            //text-decoration: underline;
+        }
+
+        &.todo {
+            color: #eded48;
+        }
+
+        &.completed {
+            color: @text-color-success;
+        }
+
+        &.question {
+            color: @text-color-info;
+        }
+
+        &.important {
+            color: #eea83d;
+        }
+
+        &.warning {
+            color: @text-color-error;
+        }
+
+        &.note {
+            color: #f455f4;
+        }
+
+        &.future {
+            background-color: #5d00ba;
+        }
     }
 }
