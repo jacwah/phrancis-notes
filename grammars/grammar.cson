@@ -6,10 +6,15 @@
 ]
 
 'patterns': [
+    { 'include': '#keywords' },
     {
         'begin': '~'
         'end': '~'
         'name': 'phrancis_notes.heading'
+    },
+    {
+        'match': '//.*'
+        'name': 'comment.line.double-slash.phrancis_notes'
     },
     {
         'begin': '"'
@@ -44,36 +49,44 @@
         'name': 'comment.block.phrancis_notes'
         'patterns': ['include': '$self']
     },
-    {
-        'match': '//.*'
-        'name': 'comment.line.double-slash.phrancis_notes'
-    },
-    {
+]
+
+'repository':
+    'todo':
         'match': '(@TODO)|(\\^temp)|(\\^staging)'
         'name': 'phrancis_notes.keyword.todo'
-    },
-    {
+
+    'completed':
         'match': '(@COMPLETED)|(@RESOLVED)|(@DONE)'
         'name': 'phrancis_notes.keyword.completed'
-    },
-    {
+
+    'question':
          'match': '(@QUESTION)|(@UPDATE)|(@EXAMPLE)|(\\^dev)'
          'name': 'phrancis_notes.keyword.question'
-    },
-    {
+
+    'important':
         'match': '(@IMPORTANT)|(@EXCEPTION)|(\\^production)'
         'name': 'phrancis_notes.keyword.important'
-    },
-    {
+
+    'warning':
         'match': '(@WARNING)|(@DANGER)|(@ERROR)|(\\^NoUndo)'
         'name': 'phrancis_notes.keyword.warning'
-    },
-    {
+
+    'note':
         'match': '(@NOTE)|(\\*\\w+)'
         'name': 'phrancis_notes.keyword.note'
-    },
-    {
+
+    'future':
         'match': '(@FUTURE)|(@TOLEARN)'
         'name': 'phrancis_notes.keyword.future'
-    },
-]
+
+    'keywords':
+        'patterns': [
+            { 'include': '#todo' }
+            { 'include': '#completed' }
+            { 'include': '#question' }
+            { 'include': '#important' }
+            { 'include': '#warning' }
+            { 'include': '#note' }
+            { 'include': '#future' }
+        ]
