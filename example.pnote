@@ -1,0 +1,46 @@
+~ A header using tildes ~
+
+{ @NOTE This markup style is best viewed with the `Deep Black` style configuration
+    This can be changed in `Setting -> Style Configurator...` menu. }
+
+This is regular text and "This is a quote."
+
+This is an `identifier` using backticks.
+
+~ Comments ~
+
+[square bracket `comment`]
+
+{ Curly brace `comment` blocks:
+    Comments can span over multiple lines
+    with folding }
+
+// line `comment`
+
+~ Keywords ~
+
+#yellow | @TODO | ^temp | ^staging
+#green  | @COMPLETED | @RESOLVED | @DONE
+#blue   | @QUESTION | @UPDATE | @EXAMPLE | ^dev
+#orange | @IMPORTANT | @EXCEPTION | ^production
+#red    | @WARNING | @DANGER | @ERROR | ^NoUndo
+#pink   | @NOTE | *star prefixed
+#purple | @FUTURE | @TOLEARN
+
+{ A note about *keywords in comments:
+    Comments also support *keywords
+    like @IMPORTANT and ^dev }
+
+~ Code blocks ~
+
+ $ escaped $
+
+<code>
+    // $ Language: JavaScript $
+    function Hello(name) {
+        return "Hello " + name + "."
+    }
+
+    // @EXAMPLE $ returns "Hello, John Doe." $
+    Hello("John Doe");
+</code>

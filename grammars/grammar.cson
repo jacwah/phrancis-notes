@@ -1,0 +1,9 @@
+'scopeName': 'text.phrancis_notes'
+'name': 'Phranics Notes'
+'fileTypes': [
+    'txt'
+    'pnote'
+]
+
+'patterns': [
+]
