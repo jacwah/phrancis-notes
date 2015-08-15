@@ -33,14 +33,12 @@ This is an `identifier` using backticks.
 
 ~ Code blocks ~
 
- $ escaped $
-
 <code>
-    // $ Language: JavaScript $
+    // Language: JavaScript
     function Hello(name) {
         return "Hello " + name + "."
     }
 
-    // @EXAMPLE $ returns "Hello, John Doe." $
+    // @EXAMPLE returns "Hello, John Doe."
     Hello("John Doe");
 </code>
