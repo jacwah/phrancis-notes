@@ -8,8 +8,7 @@
 'patterns': [
     { 'include': '#keywords' },
     {
-        'begin': '~'
-        'end': '~'
+        'match': '~.*~'
         'name': 'phrancis_notes.heading'
     },
     {
@@ -22,8 +21,7 @@
         'name': 'markup.quote'
     },
     {
-        'begin': '`'
-        'end': '`'
+        'match': '`.*`'
         'name': 'entity.name.function'
     },
     {
@@ -38,16 +36,15 @@
         'patterns': ['include': '$self']
     }
     {
-        'begin': '\\['
-        'end': '\\]'
+        'match': '\\[.*\\]'
         'name': 'comment.block.phrancis_notes'
-        'patterns': ['include': '$self']
+        'patterns': ['include': '#keywords']
     },
     {
         'begin': '{'
         'end': '}'
         'name': 'comment.block.phrancis_notes'
-        'patterns': ['include': '$self']
+        'patterns': ['include': '#keywords']
     },
 ]
 
