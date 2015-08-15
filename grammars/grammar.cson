@@ -32,31 +32,31 @@
         'name': 'entity.name.function'
 
     'todo':
-        'match': '(@TODO)|(\\^temp)|(\\^staging)'
+        'match': '#yellow|@TODO|\\^temp|\\^staging'
         'name': 'phrancis_notes.keyword.todo'
 
     'completed':
-        'match': '(@COMPLETED)|(@RESOLVED)|(@DONE)'
+        'match': '#green|@COMPLETED|@RESOLVED|@DONE'
         'name': 'phrancis_notes.keyword.completed'
 
     'question':
-         'match': '(@QUESTION)|(@UPDATE)|(@EXAMPLE)|(\\^dev)'
+         'match': '#blue|@QUESTION|@UPDATE|@EXAMPLE|\\^dev'
          'name': 'phrancis_notes.keyword.question'
 
     'important':
-        'match': '(@IMPORTANT)|(@EXCEPTION)|(\\^production)'
+        'match': '#orange|@IMPORTANT|@EXCEPTION|\\^production'
         'name': 'phrancis_notes.keyword.important'
 
     'warning':
-        'match': '(@WARNING)|(@DANGER)|(@ERROR)|(\\^NoUndo)'
+        'match': '#red|@WARNING|@DANGER|@ERROR|\\^NoUndo'
         'name': 'phrancis_notes.keyword.warning'
 
     'note':
-        'match': '(@NOTE)|(\\*\\w+)'
+        'match': '#pink|@NOTE|\\*\\w+'
         'name': 'phrancis_notes.keyword.note'
 
     'future':
-        'match': '(@FUTURE)|(@TOLEARN)'
+        'match': '#purple|@FUTURE|@TOLEARN'
         'name': 'phrancis_notes.keyword.future'
 
     'keywords':
