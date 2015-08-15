@@ -1,7 +1,6 @@
 'scopeName': 'text.phrancis_notes'
 'name': 'Phrancis Notes'
 'fileTypes': [
-    'txt'
     'pnote'
 ]
 
